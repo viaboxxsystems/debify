@@ -1,7 +1,7 @@
-= Debify =
+# Debify #
 
 Extension of spotify/debify to include support for xz compression
 
-== Building ==
+## Building ##
 
     docker build -t docker.intra.viaboxxsystems.de/viaboxx/debify . 
