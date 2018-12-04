@@ -4,11 +4,11 @@ Extension of spotify/debify to include support for xz compression. Debify genera
 
 ## Building ##
 
-    docker build -t docker.intra.viaboxxsystems.de/viaboxx/debify . 
-    docker push docker.intra.viaboxxsystems.de/viaboxx/debify 
+    docker build -t viaboxx/debify . 
+    docker push viaboxx/debify 
 
 ## Running ##
 
 Example:
     
-    docker run --rm -e APTLY_DISTRIBUTION=delymate -e APTLY_ARCHITECTURES=amd64,i383,armhf -v $(pwd):/debs -v ~/.gnupg:/.gnupg docker.intra.viaboxxsystems.de/viaboxx/debify:latest 
+    docker run --rm -e APTLY_DISTRIBUTION=delymate -e APTLY_ARCHITECTURES=amd64,i383,armhf -v $(pwd):/debs -v ~/.gnupg:/.gnupg viaboxx/debify:latest 
